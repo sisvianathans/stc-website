@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Senior Tamils' Centre of Ontario</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#0f172a; --muted:#475569; --brand:#0ea5e9; --brand-ink:#075985; --bg:#ffffff; --surface:#f1f5f9; --radius:18px; --max:1160px; --space:clamp(16px,2.6vw,32px);
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; color:var(--ink); background:var(--bg); line-height:1.65}
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:var(--max); margin:auto; padding:0 var(--space)}
+    header{position:sticky; top:0; backdrop-filter:saturate(1.1) blur(6px); background:color-mix(in oklab, white 78%, transparent); border-bottom:1px solid #e2e8f0; z-index:10}
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    .brand{font-family:Poppins, system-ui; font-weight:700; letter-spacing:.2px}
+    .menu{display:flex; gap:18px; align-items:center}
+    .btn{display:inline-block; padding:10px 16px; border-radius:999px; background:var(--brand); color:#fff; font-weight:700; border:1px solid color-mix(in oklab, var(--brand) 88%, black 10%); box-shadow:0 6px 16px rgba(14,165,233,.25)}
+    .btn:hover{transform:translateY(-1px)}
+    .hero{padding:clamp(48px,8vw,128px) 0; text-align:center}
+    h1{font-family:Poppins, system-ui; font-size:clamp(28px,5vw,48px); line-height:1.1; margin:0 0 12px}
+    h2{font-family:Poppins, system-ui; font-size:clamp(22px,3.2vw,34px); margin:0 0 8px}
+    .lead{font-size:clamp(16px,2.1vw,20px); color:var(--muted); margin:0 auto 22px; max-width:760px}
+    .section{padding:clamp(36px,6vw,80px) 0}
+    .grid{display:grid; gap:var(--space)}
+    .two{grid-template-columns:1.1fr .9fr; align-items:center}
+    @media (max-width: 880px){ .two{grid-template-columns:1fr} }
+    .cards{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .card{background:var(--surface); padding:22px; border-radius:var(--radius); border:1px solid #e2e8f0}
+    .eyebrow{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#0ea5e9; font-weight:800}
+    .avatar{width:100%; border-radius:var(--radius); aspect-ratio:4/3; object-fit:cover; border:1px solid #e2e8f0}
+    .notice{padding:14px 18px; background:#ecfeff; border:1px solid #bae6fd; border-radius:12px}
+    .list{padding-left:18px}
+    footer{padding:28px 0; border-top:1px solid #e2e8f0; color:var(--muted); text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Senior Tamils' Centre of Ontario</div>
+      <nav class="menu">
+        <a href="#programs">Programs</a>
+        <a href="#membership">Membership</a>
+        <a href="#events">Events</a>
+        <a href="#donate" class="btn">Donate</a>
+        <a href="#contact" class="btn" style="background:#10b981; border-color:#059669; box-shadow:0 6px 16px rgba(16,185,129,.25)">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" aria-label="Hero">
+      <h1>Programs, connection, and support for Tamil seniors in Ontario</h1>
+      <p class="lead">Since 1986, we’ve helped seniors lead healthy, engaged, and independent lives through weekly activities, cultural programs, and community services.</p>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:8px">
+        <a class="btn" href="#programs">Explore Programs</a>
+        <a class="btn" href="#membership" style="background:#6366f1; border-color:#4f46e5; box-shadow:0 6px 16px rgba(99,102,241,.25)">Become a Member</a>
+      </div>
+    </section>
+
+    <section id="programs" class="section">
+      <div class="container">
+        <div class="eyebrow">Weekly Highlights</div>
+        <h2>What we do in a week</h2>
+        <p class="lead" style="font-size:16px">A sample of ongoing activities (update with exact schedule):</p>
+        <div class="grid cards">
+          <div class="card"><h3>Wellness & Fitness</h3><p>Chair yoga, stretching, and light exercise to stay active and energized.</p></div>
+          <div class="card"><h3>Social & Cultural</h3><p>Language, music, arts and celebrations that honour Tamil heritage.</p></div>
+          <div class="card"><h3>Learning & Support</h3><p>Workshops on digital literacy, health info, and navigating services.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid two">
+        <img class="avatar" src="https://images.unsplash.com/photo-1539017072982-cd3e2f6b1a68?q=80&w=1200&auto=format&fit=crop" alt="Community gathering">
+        <div>
+          <div class="eyebrow">About</div>
+          <h2>Our mission</h2>
+          <p>We aim to enhance well-being, reduce isolation, and create a strong sense of belonging for seniors by mobilizing, socializing, and providing support and advocacy.</p>
+          <div class="notice" role="status">Our new office: <strong>3852 Finch Avenue East, Suite 210, Toronto ON M1T 3T9</strong>.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="membership" class="section" aria-label="Membership">
+      <div class="container">
+        <div class="eyebrow">Join</div>
+        <h2>Become a Member</h2>
+        <div class="grid two" style="align-items:start">
+          <div>
+            <p>Eligibility: Tamil residents of Ontario aged 55+.</p>
+            <ul class="list">
+              <li><strong>Annual:</strong> $35 per person</li>
+              <li><strong>New member:</strong> $35 + $60 one-time enrollment</li>
+              <li><strong>Life membership:</strong> Discounted by age (see form)</li>
+              <li><strong>Sustaining:</strong> Sponsor an activity or project</li>
+            </ul>
+            <p><a class="btn" href="#contact">Request Membership Form</a></p>
+          </div>
+          <div class="card">
+            <h3>Why join?</h3>
+            <p>Meet friends, stay active, and access programs designed for you. Members help shape activities and our future.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section" aria-label="Events">
+      <div class="container">
+        <div class="eyebrow">Happening</div>
+        <h2>Events & Photos</h2>
+        <p class="lead" style="font-size:16px">Add upcoming events here. Link to albums or your Facebook page for galleries.</p>
+      </div>
+    </section>
+
+    <section id="donate" class="section" aria-label="Donate">
+      <div class="container">
+        <div class="eyebrow">Support</div>
+        <h2>Together, we succeed</h2>
+        <p>Your donation helps us expand programs that reduce isolation and improve quality of life for seniors.</p>
+        <div class="grid cards">
+          <div class="card"><h3>Online</h3><p>Connect a secure donation button (Stripe/PayPal/CanadaHelps).</p></div>
+          <div class="card"><h3>e‑Transfer</h3><p>Send to <strong>seniortamils@gmail.com</strong> (add instructions and thank-you note).</p></div>
+          <div class="card"><h3>By Cheque</h3><p>Confirm the correct mailing address before publishing.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-label="Contact">
+      <div class="container">
+        <div class="eyebrow">Contact</div>
+        <h2>Get in touch</h2>
+        <p class="lead" style="font-size:16px">Office hours: Mon–Thu 9:30am–3:30pm, Fri 12:30–3:30pm</p>
+        <div class="grid two">
+          <div class="card">
+            <p><strong>Phone:</strong> (416) 496‑2897</p>
+            <p><strong>Email:</strong> <a href="mailto:admin@seniortamilscentre.org">admin@seniortamilscentre.org</a></p>
+            <p><strong>Address:</strong> 3852 Finch Avenue East, Suite 210, Scarborough, ON M1T 3T9</p>
+          </div>
+          <form class="card" onsubmit="event.preventDefault(); alert('Thanks! We\'ll be in touch.');">
+            <label for="name">Name*</label><br>
+            <input id="name" required style="width:100%; padding:10px; border-radius:10px; border:1px solid #cbd5e1; margin:6px 0 12px"><br>
+            <label for="email">Email*</label><br>
+            <input id="email" type="email" required style="width:100%; padding:10px; border-radius:10px; border:1px solid #cbd5e1; margin:6px 0 12px"><br>
+            <label for="msg">Message</label><br>
+            <textarea id="msg" rows="4" style="width:100%; padding:10px; border-radius:10px; border:1px solid #cbd5e1; margin:6px 0 12px"></textarea><br>
+            <button class="btn" type="submit">Send</button>
+            <p style="font-size:12px; color:var(--muted)">Replace with Formspree/Netlify for real submissions.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> Senior Tamils' Centre of Ontario</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
